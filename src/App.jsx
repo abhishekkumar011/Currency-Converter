@@ -1,6 +1,9 @@
-import InputBox from "./components/InputBox";
+import {InputBox} from "./components";
+import useCurrencyInfo from "./hooks/useCurrencyInfo";
 
 function App() {
+  const currencyInfo = useCurrencyInfo("inr");
+  console.log(currencyInfo);
   return (
     <div
       className=" w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
